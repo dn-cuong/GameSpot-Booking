@@ -1,0 +1,56 @@
+/* Dashboard.css */
+.dashboard {
+    text-align: center;
+    padding: 20px;
+}
+
+.machine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.machine-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    background-color: #f9f9f9;
+}
+
+.machine-card:hover {
+    transform: translateY(-5px);
+}
+
+.machine-icon img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.machine-info h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.machine-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    text-align: center;
+}
+
+.machine-card.available {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.machine-card.reserved {
+    background-color: #f8d7da;
+    color: #721c24;
+}

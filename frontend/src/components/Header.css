@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+  
+.header {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #efeff0;
+    color: #efeff0;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.logo-image {
+    height: 30px;
+}
+  
+.logo a {
+    text-decoration: none;
+    color: #006747;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: "Barlow Condensed", sans-serif;
+}
+  
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+  
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #006747;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+  
+.nav {
+    display: flex;
+    align-items: center;
+}
+  
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 3.5rem;
+}
+  
+.nav-links li {
+    margin: 0;
+}
+  
+.nav a {
+    text-decoration: none;
+    color: #006747;
+    font: 600 1em/1.25em "Barlow Condensed", sans-serif;
+}
+  
+.nav a:hover {
+    text-decoration: underline;
+}
+  
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+}
+  
+.button {
+    font: 600 1em/1.25em "Barlow Condensed", sans-serif;
+    text-decoration: none;
+    color: #006747;
+    padding: 0.5rem 1rem;
+    border: 1px solid #006747;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #006747;
+    color: white;
+}
+  
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+    }
+  
+    .nav {
+        display: none;
+        flex-direction: column;
+        background-color: #006747;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 1rem 0;
+        z-index: 1;
+    }
+  
+    .nav a {
+        text-decoration: none;
+        color: #efeff0;
+        font: 600 1em/1.25em "Barlow Condensed", sans-serif;
+    }
+  
+    .nav.open {
+        display: flex;
+        z-index: 12;
+    }
+  
+    .hamburger {
+        display: flex;
+    }
+  
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .nav-links li {
+        margin: 1rem 0;
+    }
+}

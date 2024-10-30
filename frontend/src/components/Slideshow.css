@@ -1,0 +1,60 @@
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slideshow-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    opacity: 0;
+}
+
+.slideshow-image.active {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-overlay {
+    color: white;
+    font: 800 3rem "Barlow Condensed", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+    margin-bottom: 20px;
+}
+
+.reserve-button {
+    font: 600 2rem "Barlow Condensed", sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.reserve-button:hover {
+    background-color: #006746c3;
+    cursor: pointer;
+    border: 1px solid #006746c3;
+}

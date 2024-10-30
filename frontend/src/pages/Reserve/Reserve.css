@@ -1,0 +1,144 @@
+.reserve_background {
+    background-image: url('../../assets/images/image2.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: relative; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.view-map {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 600;
+    color: #004c36;
+    border: none;
+    background-color: transparent;
+}
+
+.view-map:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.reserve_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.reserve_container {
+    width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.reserve_container h3 {
+    font: 600 "Barlow Condensed", sans-serif;
+    color: #004c36;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.reserve_container label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.text-contain {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reserve_container input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.reserve_container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.submit {
+    font: 600 1rem "Barlow Condensed", sans-serif;
+    width: 100%;
+    padding: 12px;
+    background-color: #006746c3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.submit:hover {
+    background-color: #004c36;
+    transform: scale(1.05); 
+}
+
+@media (max-width: 768px) {
+    .reserve_container {
+        padding: 15px; 
+    }
+
+    .view-map, .submit {
+        padding: 8px 16px; 
+    }
+}

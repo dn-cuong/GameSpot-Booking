@@ -1,0 +1,15 @@
+.text_wrapper {
+    height: 100vh - 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #155724;
+}
+
+
+.text_wrapper h1{
+    font-size: 10em;
+    font-weight: bold;
+    color: #155724;
+}
