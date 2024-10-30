@@ -70,7 +70,7 @@ Before you begin, ensure you have the following installed on your machine:
 4. **Database Setup**:
    - Open your MySQL client and create a new database for the application:
      ```sql
-     CREATE DATABASE gamespot_booking;
+     CREATE DATABASE myDB;
      ```
    - Import the SQL schema provided in the `backend` directory to set up the necessary tables.
 
