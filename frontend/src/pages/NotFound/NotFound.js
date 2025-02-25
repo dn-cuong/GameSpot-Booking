@@ -1,9 +1,9 @@
 // NotFound.jsx
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+
 import "./NotFound.css"
 const NotFound = () => {
-    const location = useLocation();
+
 
     return (
         <div className='text_wrapper'>
